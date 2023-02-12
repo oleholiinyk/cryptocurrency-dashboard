@@ -28,10 +28,10 @@ The project automatically opened in your browser at
 
 ## Screenshots
 
-![screenshot #1](src/img/home.png)
+![screenshot #1](src/img/img_1.png)
 
-![screenshot #1](src/img/search.png)
+![screenshot #1](src/img/img_2.png)
 
-![screenshot #1](src/img/detail.png)
+![screenshot #1](src/img/img_3.png)
 
-![screenshot #1](src/img/more.png)
+![screenshot #1](src/img/img_4.png)
