@@ -8,7 +8,7 @@ function App() {
     <MasterLayout>
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/crypto/details" exact component={CryptoPage} />
+        <Route path="/details/:id" exact component={CryptoPage} />
         <Route path="*" component={HomePage} />
       </Switch>
     </MasterLayout>

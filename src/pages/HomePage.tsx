@@ -22,7 +22,7 @@ const HomePage = () => {
 
   const nextPage = (symbol: string, name: string, id: string, img: string) => {
     dispatch(SearchAsset(symbol, name.toLowerCase(), id, img));
-    history.push(`/crypto/details`);
+    history.push(`/details/`+id);
   };
 
   return (
@@ -61,7 +61,7 @@ const HomePage = () => {
                         />
                       </span>
                       <Link
-                        to={`/crypto/details`}
+                        to={`/details/`+crypto.uuid}
                         onClick={() =>
                           nextPage(
                             crypto.symbol,

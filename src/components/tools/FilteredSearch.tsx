@@ -14,7 +14,7 @@ export default function FilteredSearch({ search, setFind }: any) {
   ) => {
     dispatch(SearchAsset(symbol, name.toLowerCase(), id, img));
     setFind([]);
-    history.push(`/crypto/details`);
+    history.push(`/details/`+id);
   };
 
   return (
