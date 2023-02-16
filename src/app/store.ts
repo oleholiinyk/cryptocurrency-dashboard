@@ -1,6 +1,5 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
-import contactSlice from "../app/contactSlice";
 import { cryptoApi } from "../services/cryptoApi";
 import { cryptoNewsApi } from "../services/cryptoNewsApi";
 import { cryptocompareApi } from "../services/cryptocompareApi";
@@ -8,7 +7,6 @@ import cryptoSlice from "./cryptoSlice";
 
 export const store = configureStore({
   reducer: {
-    contact: contactSlice,
     crypto: cryptoSlice,
     [cryptoApi.reducerPath]: cryptoApi.reducer,
     [cryptoNewsApi.reducerPath]: cryptoNewsApi.reducer,
